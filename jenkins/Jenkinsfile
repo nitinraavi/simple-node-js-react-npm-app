@@ -7,8 +7,8 @@ pipeline {
     }
     environment {
         CI = 'true'
-        HOME = "${WORKSPACE}"
-        NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+        HOME = "/var/lib/jenkins/workspace/React"
+        NPM_CONFIG_CACHE = "/var/lib/jenkins/workspace/React/.npm"
     }
     stages {
         stage('Build') {
